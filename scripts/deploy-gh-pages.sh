@@ -23,5 +23,5 @@ cd "$TMP"
 git add -A
 git -c user.name="$(git -C "$ROOT" config user.name)" -c user.email="$(git -C "$ROOT" config user.email)" \
   commit -q -m "Deploy $(date -u +%Y-%m-%dT%H:%M:%SZ)"
-git push -q origin gh-pages
+git push -q "$REMOTE_URL" gh-pages
 echo "Veröffentlicht: Branch gh-pages ($(git rev-parse --short HEAD))"
