@@ -1,0 +1,395 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Residenz Felsgarten – 36 Eigentumswohnungen am Stadtpark (fiktives Demo-Projekt)</title>
+  <meta name="description" content="Residenz Felsgarten: fiktives Neubauprojekt mit 36 Eigentumswohnungen in Holz-Hybridbauweise. Interaktive 3D-Gebäudeansicht, Wohnungsfinder mit Grundrissen, Lage und Exposé-Anfrage. Demo-Website, alle Angaben erfunden." />
+  <link rel="canonical" href="https://alper3019-ux.github.io/residenz-felsgarten/" />
+  <meta name="theme-color" content="#f3eee5" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="de_DE" />
+  <meta property="og:site_name" content="Residenz Felsgarten" />
+  <meta property="og:title" content="Residenz Felsgarten – Wohnen über den Baumkronen" />
+  <meta property="og:description" content="Fiktives Neubauprojekt: 3D-Kamerafahrt ums Gebäude, Wohnungsfinder mit Grundrissen, Lage und Exposé-Anfrage." />
+  <meta property="og:url" content="https://alper3019-ux.github.io/residenz-felsgarten/" />
+  <meta property="og:image" content="https://alper3019-ux.github.io/residenz-felsgarten/og.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Gerenderte Ansicht der fiktiven Residenz Felsgarten zwischen Bäumen" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" href="/residenz-felsgarten/favicon.ico" sizes="32x32" />
+  <link rel="icon" href="/residenz-felsgarten/favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="/residenz-felsgarten/apple-touch-icon.png" />
+  <link rel="preload" as="image" type="image/avif" fetchpriority="high"
+    imagesrcset="/residenz-felsgarten/poster/hero-960.avif 960w, /residenz-felsgarten/poster/hero-1600.avif 1600w, /residenz-felsgarten/poster/hero-2400.avif 2400w"
+    imagesizes="100vw" media="(min-aspect-ratio: 4/5)" />
+  <link rel="preload" as="image" type="image/avif" fetchpriority="high"
+    imagesrcset="/residenz-felsgarten/poster/hero-portrait-540.avif 540w, /residenz-felsgarten/poster/hero-portrait-900.avif 900w"
+    imagesizes="100vw" media="(max-aspect-ratio: 4/5)" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ApartmentComplex",
+    "name": "Residenz Felsgarten (fiktives Demo-Projekt)",
+    "description": "Fiktives Neubauprojekt mit 36 Eigentumswohnungen. Demonstrations-Website; Projekt, Preise und Kontaktdaten sind erfunden.",
+    "url": "https://alper3019-ux.github.io/residenz-felsgarten/",
+    "image": "https://alper3019-ux.github.io/residenz-felsgarten/og.jpg",
+    "numberOfAccommodationUnits": 36
+  }
+  </script>
+  <script type="module" crossorigin src="/residenz-felsgarten/assets/main-D9Q5cJPt.js"></script>
+  <link rel="stylesheet" crossorigin href="/residenz-felsgarten/assets/main-DTgINj3F.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Zum Inhalt springen</a>
+
+  <header class="nav">
+    <a href="#top" class="nav__logo" data-scroll aria-label="Residenz Felsgarten – zum Seitenanfang">
+      <svg class="nav__mark" viewBox="0 0 32 32" aria-hidden="true"><path d="M4 28V12l12-8 12 8v16" fill="none" stroke="currentColor" stroke-width="2"/><path d="M10 28V17h12v11M10 22h12" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+      <span>Residenz <em>Felsgarten</em></span>
+    </a>
+    <nav class="nav__links" aria-label="Hauptnavigation">
+      <a href="#projekt" data-scroll>Projekt</a>
+      <a href="#gebaeude" data-scroll>Gebäude</a>
+      <a href="#wohnungen" data-scroll>Wohnungen</a>
+      <a href="#lage" data-scroll>Lage</a>
+      <a href="#ausstattung" data-scroll>Ausstattung</a>
+    </nav>
+    <a href="#kontakt" class="btn btn--small nav__cta" data-scroll>Exposé anfordern</a>
+    <button class="nav__burger" type="button" aria-expanded="false" aria-controls="menu" aria-label="Menü öffnen"><span></span><span></span></button>
+  </header>
+  <div class="menu" id="menu" aria-hidden="true">
+    <nav aria-label="Mobile Navigation">
+      <a href="#projekt" data-scroll>Projekt</a>
+      <a href="#gebaeude" data-scroll>Gebäude</a>
+      <a href="#wohnungen" data-scroll>Wohnungen</a>
+      <a href="#lage" data-scroll>Lage</a>
+      <a href="#ausstattung" data-scroll>Ausstattung</a>
+      <a href="#kontakt" data-scroll>Exposé anfordern</a>
+    </nav>
+  </div>
+
+  <main id="main" tabindex="-1">
+    <!-- HERO -->
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <picture class="hero__media">
+        <source type="image/avif" media="(max-aspect-ratio: 4/5)" srcset="/residenz-felsgarten/poster/hero-portrait-540.avif 540w, /residenz-felsgarten/poster/hero-portrait-900.avif 900w" sizes="100vw" />
+        <source type="image/webp" media="(max-aspect-ratio: 4/5)" srcset="/residenz-felsgarten/poster/hero-portrait-540.webp 540w, /residenz-felsgarten/poster/hero-portrait-900.webp 900w" sizes="100vw" />
+        <source type="image/avif" srcset="/residenz-felsgarten/poster/hero-960.avif 960w, /residenz-felsgarten/poster/hero-1600.avif 1600w, /residenz-felsgarten/poster/hero-2400.avif 2400w" sizes="100vw" />
+        <img src="/residenz-felsgarten/poster/hero-1600.webp" srcset="/residenz-felsgarten/poster/hero-960.webp 960w, /residenz-felsgarten/poster/hero-1600.webp 1600w, /residenz-felsgarten/poster/hero-2400.webp 2400w" sizes="100vw"
+          width="1600" height="1000" alt="Gerenderte Ansicht der Residenz Felsgarten: siebengeschossiger Holz-Hybridbau mit Penthouse, umgeben von Bäumen" fetchpriority="high" decoding="async" />
+      </picture>
+      <div class="hero__shade" aria-hidden="true"></div>
+      <div class="hero__content wrap">
+        <p class="badge mono"><span class="badge__dot" aria-hidden="true"></span>Fiktives Demo-Projekt<span class="badge__more"> · alle Angaben erfunden</span></p>
+        <h1 id="hero-title" class="hero__title">
+          <span class="line"><span>Wohnen über</span></span>
+          <span class="line"><span>den <em>Baumkronen.</em></span></span>
+        </h1>
+        <p class="hero__lead">36 Eigentumswohnungen in Holz-Hybridbauweise, direkt am Stadtpark. Zwei bis fünf Zimmer, jede mit Loggia, Garten oder Dachterrasse.</p>
+        <div class="hero__actions">
+          <a href="#wohnungen" class="btn" data-scroll>Wohnung finden</a>
+          <a href="#gebaeude" class="btn btn--ghost" data-scroll>Gebäude erkunden</a>
+        </div>
+        <dl class="hero__facts mono">
+          <div><dt>Wohnungen</dt><dd>36</dd></div>
+          <div><dt>Wohnfläche</dt><dd>60–186 m²</dd></div>
+          <div><dt>Geschosse</dt><dd>EG + 6 + PH</dd></div>
+          <div><dt>Bezug</dt><dd>Q4 / 2028*</dd></div>
+        </dl>
+      </div>
+      <p class="hero__foot mono wrap">* fiktiver Termin. Visualisierung: in Echtzeit erzeugtes 3D-Modell, kein reales Gebäude.</p>
+    </section>
+
+    <!-- PROJEKT -->
+    <section class="section intro" id="projekt" aria-labelledby="projekt-title">
+      <div class="wrap intro__grid">
+        <p class="eyebrow mono"><span class="idx">01</span> Das Projekt</p>
+        <h2 id="projekt-title" class="intro__title reveal">Ein Haus, das zum Park hin offen ist – und zur Stadt hin ruhig.</h2>
+        <div class="intro__text reveal">
+          <p>Die Residenz Felsgarten steht auf dem Gelände einer ehemaligen Gärtnerei. Sieben Geschosse, ein zurückgesetztes Penthouse, tiefe Loggien nach Süden. Lamellen aus heimischer Eiche gliedern die Fassade und spenden im Sommer Schatten.</p>
+          <p>Auf dieser Website ist alles erfunden: Name, Adresse, Bauträger, Preise und Termine. Sie zeigt, wie ein Neubauprojekt digital vermarktet werden kann – mit interaktivem Gebäude, Wohnungsfinder und barrierearmer Bedienung.</p>
+        </div>
+        <ul class="pillars" role="list">
+          <li class="pillar reveal"><span class="pillar__n mono">Holz</span><h3>Holz-Hybrid</h3><p>Decken aus Brettsperrholz auf Betonkern. Weniger graue Energie, angenehmes Raumklima (Konzeptangabe).</p></li>
+          <li class="pillar reveal"><span class="pillar__n mono">Park</span><h3>Grün vor der Tür</h3><p>Der Stadtpark beginnt hinter dem Haus. Gemeinschaftsgarten und Spielhof im Innenbereich.</p></li>
+          <li class="pillar reveal"><span class="pillar__n mono">Energie</span><h3>Wärmepumpe &amp; PV</h3><p>Fußbodenheizung über Sole-Wärmepumpe, Photovoltaik auf dem Dach, Ladepunkte in der Tiefgarage (fiktiv).</p></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- GEBÄUDE / 3D-FAHRT -->
+    <section class="flight" id="gebaeude" aria-labelledby="gebaeude-title">
+      <div class="flight__stage">
+        <div class="flight__shade" aria-hidden="true"></div>
+        <div class="flight__canvas-wrap" data-flight-canvas>
+          <picture class="flight__poster">
+            <source type="image/avif" media="(max-aspect-ratio: 4/5)" srcset="/residenz-felsgarten/poster/hero-portrait-540.avif 540w, /residenz-felsgarten/poster/hero-portrait-900.avif 900w" sizes="100vw" />
+            <source type="image/avif" srcset="/residenz-felsgarten/poster/hero-960.avif 960w, /residenz-felsgarten/poster/hero-1600.avif 1600w, /residenz-felsgarten/poster/hero-2400.avif 2400w" sizes="100vw" />
+            <img src="/residenz-felsgarten/poster/hero-1600.webp" width="1600" height="1000" alt="" loading="lazy" decoding="async" />
+          </picture>
+        </div>
+        <div class="flight__ui wrap">
+          <div class="flight__head">
+            <p class="eyebrow mono"><span class="idx">02</span> Das Gebäude</p>
+            <h2 id="gebaeude-title" class="flight__title">Einmal rundherum.</h2>
+          </div>
+          <ol class="chapters" role="list">
+            <li class="chapter is-active" data-chapter="0"><span class="mono">Ankommen</span><p>Ein Platz mit Wasserbecken empfängt Sie. Das Haus steht frei zwischen alten Bäumen.</p></li>
+            <li class="chapter" data-chapter="1"><span class="mono">Fassade</span><p>Eichenlamellen im Raster von 1,50 m. Raumhohe Fenster, dreifach verglast.</p></li>
+            <li class="chapter" data-chapter="2"><span class="mono">Parkseite</span><p>Loggien nach Süden, versetzt angeordnet – so bleibt jede privat.</p></li>
+            <li class="chapter" data-chapter="3"><span class="mono">Penthouse</span><p>Zwei Wohnungen mit umlaufender Dachterrasse und Blick über die Baumkronen.</p></li>
+          </ol>
+          <nav class="floors" aria-labelledby="floors-title">
+            <p class="floors__title mono" id="floors-title">Etage wählen</p>
+            <ul class="floors__list" role="list" data-floor-list></ul>
+            <p class="floors__hint">Etage im Modell oder in der Liste wählen – der Wohnungsfinder zeigt dann die passenden Wohnungen.</p>
+          </nav>
+          <div class="flight__progress" aria-hidden="true"><span></span></div>
+        </div>
+        <div class="flight__tip mono" aria-hidden="true" hidden></div>
+      </div>
+    </section>
+
+    <!-- WOHNUNGEN -->
+    <section class="section finder" id="wohnungen" aria-labelledby="wohnungen-title">
+      <div class="wrap">
+        <div class="section__head">
+          <p class="eyebrow mono"><span class="idx">03</span> Wohnungen</p>
+          <h2 id="wohnungen-title" class="reveal" tabindex="-1">Finden Sie Ihre Wohnung.</h2>
+          <p class="section__lead reveal">36 Wohnungen, alle Daten fiktiv. Filtern Sie nach Zimmern, Etage und Außenbereich. Ein Klick auf eine Wohnung zeigt Grundriss und Lage im Haus.</p>
+        </div>
+        <form class="filters" aria-label="Wohnungen filtern" data-filters>
+          <fieldset class="filters__group filters__rooms">
+            <legend class="mono">Zimmer</legend>
+            <div class="chips">
+              <label class="chip"><input type="checkbox" name="rooms" value="2" /><span>2</span></label>
+              <label class="chip"><input type="checkbox" name="rooms" value="3" /><span>3</span></label>
+              <label class="chip"><input type="checkbox" name="rooms" value="4" /><span>4</span></label>
+              <label class="chip"><input type="checkbox" name="rooms" value="5" /><span>5</span></label>
+            </div>
+          </fieldset>
+          <div class="filters__group">
+            <label for="f-floor" class="mono">Etage</label>
+            <select id="f-floor" name="floor"><option value="">Alle Etagen</option></select>
+          </div>
+          <div class="filters__group">
+            <label for="f-area" class="mono">Wohnfläche ab</label>
+            <select id="f-area" name="area">
+              <option value="0">beliebig</option><option value="70">70 m²</option><option value="90">90 m²</option><option value="110">110 m²</option><option value="150">150 m²</option>
+            </select>
+          </div>
+          <div class="filters__group">
+            <label for="f-outdoor" class="mono">Außenbereich</label>
+            <select id="f-outdoor" name="outdoor"><option value="">alle</option><option>Loggia</option><option>Garten</option><option>Dachterrasse</option></select>
+          </div>
+          <div class="filters__group">
+            <label for="f-sort" class="mono">Sortierung</label>
+            <select id="f-sort" name="sort"><option value="id">Etage</option><option value="price">Preis aufsteigend</option><option value="area">Fläche absteigend</option></select>
+          </div>
+          <div class="filters__group filters__toggle">
+            <label class="switch"><input type="checkbox" name="free" /><span>nur verfügbare</span></label>
+            <button type="reset" class="link-underline mono">Zurücksetzen</button>
+          </div>
+        </form>
+        <p class="finder__count mono" role="status" data-count></p>
+        <div class="finder__body">
+          <ul class="apt-list" role="list" data-apt-list></ul>
+          <section class="apt-detail" aria-labelledby="apt-detail-title" id="apt-detail" data-apt-detail tabindex="-1">
+            <h3 id="apt-detail-title">Wohnung wählen</h3>
+            <p>Wählen Sie links eine Wohnung, um Grundriss, Ausstattung und Lage im Haus zu sehen.</p>
+          </section>
+        </div>
+        <p class="note mono">Alle Wohnungen, Flächen, Preise und Grundrisse sind erfunden. Preise ohne Kaufnebenkosten, Stand: Demo.</p>
+      </div>
+    </section>
+
+    <!-- LAGE -->
+    <section class="section lage" id="lage" aria-labelledby="lage-title">
+      <div class="wrap lage__grid">
+        <div class="lage__text">
+          <p class="eyebrow mono"><span class="idx">04</span> Lage</p>
+          <h2 id="lage-title" class="reveal">Park im Rücken, Bahnhof in Reichweite.</h2>
+          <p class="section__lead reveal">Die Residenz liegt in einem ruhigen Wohnviertel einer erfundenen Mittelstadt. Alles für den Alltag ist zu Fuß oder mit dem Rad erreichbar.</p>
+          <div class="modes" role="group" aria-label="Verkehrsmittel für Wegzeiten">
+            <button type="button" class="mode" aria-pressed="true" data-mode="walk">Zu Fuß</button>
+            <button type="button" class="mode" aria-pressed="false" data-mode="bike">Rad</button>
+            <button type="button" class="mode" aria-pressed="false" data-mode="transit">ÖPNV</button>
+          </div>
+          <ul class="poi-list" role="list" data-poi-list></ul>
+          <p class="note mono">Illustration, kein Kartendienst – es werden keine Daten an Dritte übertragen. Orte und Wegzeiten sind fiktiv.</p>
+        </div>
+        <figure class="lage__map">
+          <svg viewBox="0 0 800 600" role="img" aria-labelledby="map-title map-desc" data-map>
+            <title id="map-title">Illustrierte Lagekarte</title>
+            <desc id="map-desc">Die Residenz Felsgarten liegt in der Mitte zwischen Stadtpark im Norden, Fluss im Westen und Bahnhof im Osten. Wege zu sieben Orten im Umfeld sind eingezeichnet.</desc>
+            <rect width="800" height="600" class="m-bg" />
+            <g class="m-blocks">
+              <rect x="470" y="380" width="90" height="60" rx="4"/><rect x="580" y="380" width="80" height="60" rx="4"/><rect x="470" y="460" width="190" height="70" rx="4"/>
+              <rect x="250" y="420" width="110" height="60" rx="4"/><rect x="250" y="500" width="110" height="60" rx="4"/><rect x="560" y="200" width="100" height="70" rx="4"/>
+              <rect x="680" y="380" width="90" height="150" rx="4"/><rect x="250" y="210" width="80" height="60" rx="4"/><rect x="680" y="200" width="90" height="70" rx="4"/>
+            </g>
+            <path class="m-park" d="M190 40 C320 20 520 30 640 60 C680 110 650 160 560 170 C440 185 300 175 220 160 C170 130 160 80 190 40Z" />
+            <path class="m-river" d="M120 0 C150 120 90 200 140 300 C190 400 120 480 160 600" />
+            <g class="m-streets">
+              <path d="M0 330 H800" /><path d="M420 180 V600" /><path d="M230 180 C300 190 520 190 680 180" /><path d="M200 400 H460" /><path d="M670 180 V600" />
+            </g>
+            <path class="m-rail" d="M740 0 C720 200 760 400 730 600" />
+            <g class="m-routes" data-routes></g>
+            <g class="m-pois" data-pois></g>
+            <g class="m-site" transform="translate(420 300)">
+              <circle r="120" class="m-ring" />
+              <circle r="22" class="m-site__halo" />
+              <rect x="-11" y="-11" width="22" height="22" rx="3" class="m-site__dot" />
+              <text y="44" class="m-site__label">Residenz Felsgarten</text>
+            </g>
+            <text x="300" y="110" class="m-area">Stadtpark</text>
+            <text x="78" y="470" class="m-area m-area--river" transform="rotate(-80 78 470)">Fluss</text>
+          </svg>
+          <figcaption class="mono">Schematische Illustration, nicht maßstäblich. Kreis ≈ 10 Gehminuten.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- AUSSTATTUNG -->
+    <section class="section ausstattung" id="ausstattung" aria-labelledby="ausstattung-title">
+      <div class="wrap">
+        <div class="section__head">
+          <p class="eyebrow mono"><span class="idx">05</span> Ausstattung</p>
+          <h2 id="ausstattung-title" class="reveal">Materialien, die man anfassen möchte.</h2>
+          <p class="section__lead reveal">Die Fotos sind frei lizenzierte Musterbilder aus Wikimedia Commons und zeigen nicht das Projekt. Sie illustrieren die geplante Materialwelt.</p>
+        </div>
+        <div class="gallery">
+          <figure class="gallery__item gallery__item--wide reveal">
+            <picture>
+              <source type="image/avif" srcset="/residenz-felsgarten/photos/kueche-640.avif 640w, /residenz-felsgarten/photos/kueche-1024.avif 1024w, /residenz-felsgarten/photos/kueche-1600.avif 1600w" sizes="(min-width: 900px) 60vw, 100vw" />
+              <img src="/residenz-felsgarten/photos/kueche-1024.webp" srcset="/residenz-felsgarten/photos/kueche-640.webp 640w, /residenz-felsgarten/photos/kueche-1024.webp 1024w, /residenz-felsgarten/photos/kueche-1600.webp 1600w" sizes="(min-width: 900px) 60vw, 100vw" width="1600" height="1067" loading="lazy" decoding="async" alt="Offene Küche mit dunklen Fronten und Essbereich vor raumhohen Fenstern" />
+            </picture>
+            <figcaption><strong>Wohnen &amp; Kochen</strong> Offene Grundrisse, raumhohe Fenster. <span class="credit mono">Musterbild · Foto: Shixart1985, CC BY 2.0</span></figcaption>
+          </figure>
+          <figure class="gallery__item gallery__item--tall reveal">
+            <picture>
+              <source type="image/avif" srcset="/residenz-felsgarten/photos/wohnen-480.avif 480w, /residenz-felsgarten/photos/wohnen-800.avif 800w, /residenz-felsgarten/photos/wohnen-1100.avif 1100w" sizes="(min-width: 900px) 34vw, 100vw" />
+              <img src="/residenz-felsgarten/photos/wohnen-800.webp" srcset="/residenz-felsgarten/photos/wohnen-480.webp 480w, /residenz-felsgarten/photos/wohnen-800.webp 800w, /residenz-felsgarten/photos/wohnen-1100.webp 1100w" sizes="(min-width: 900px) 34vw, 100vw" width="1100" height="1375" loading="lazy" decoding="async" alt="Wand mit Nussbaum-Lamellen neben einer Küchenzeile mit Holzfronten" />
+            </picture>
+            <figcaption><strong>Holz innen</strong> Akustikpaneele aus Nussbaum im Eingangsbereich. <span class="credit mono">Musterbild · Foto: Shixart1985, CC BY 2.0</span></figcaption>
+          </figure>
+          <figure class="gallery__item reveal">
+            <picture>
+              <source type="image/avif" srcset="/residenz-felsgarten/photos/parkett-480.avif 480w, /residenz-felsgarten/photos/parkett-800.avif 800w" sizes="(min-width: 900px) 30vw, 100vw" />
+              <img src="/residenz-felsgarten/photos/parkett-800.webp" srcset="/residenz-felsgarten/photos/parkett-480.webp 480w, /residenz-felsgarten/photos/parkett-800.webp 800w" sizes="(min-width: 900px) 30vw, 100vw" width="800" height="800" loading="lazy" decoding="async" alt="Nahaufnahme von Eichenparkett im Tafelmuster" />
+            </picture>
+            <figcaption><strong>Eichenparkett</strong> geölt, in allen Wohnräumen. <span class="credit mono">Musterbild · Foto: Kurt Kaiser, CC0</span></figcaption>
+          </figure>
+          <figure class="gallery__item reveal">
+            <picture>
+              <source type="image/avif" srcset="/residenz-felsgarten/photos/fenster-480.avif 480w, /residenz-felsgarten/photos/fenster-800.avif 800w" sizes="(min-width: 900px) 30vw, 100vw" />
+              <img src="/residenz-felsgarten/photos/fenster-800.webp" srcset="/residenz-felsgarten/photos/fenster-480.webp 480w, /residenz-felsgarten/photos/fenster-800.webp 800w" sizes="(min-width: 900px) 30vw, 100vw" width="800" height="1000" loading="lazy" decoding="async" alt="Schnittmodell eines Fensterprofils mit Dreifachverglasung" />
+            </picture>
+            <figcaption><strong>Dreifachverglasung</strong> raumhoch, mit außenliegendem Sonnenschutz. <span class="credit mono">Musterbild · Foto: Shixart1985, CC BY 2.0</span></figcaption>
+          </figure>
+          <figure class="gallery__item gallery__item--wide2 reveal">
+            <picture>
+              <source type="image/avif" srcset="/residenz-felsgarten/photos/ausblick-640.avif 640w, /residenz-felsgarten/photos/ausblick-1024.avif 1024w, /residenz-felsgarten/photos/ausblick-1600.avif 1600w" sizes="(min-width: 900px) 40vw, 100vw" />
+              <img src="/residenz-felsgarten/photos/ausblick-1024.webp" srcset="/residenz-felsgarten/photos/ausblick-640.webp 640w, /residenz-felsgarten/photos/ausblick-1024.webp 1024w, /residenz-felsgarten/photos/ausblick-1600.webp 1600w" sizes="(min-width: 900px) 40vw, 100vw" width="1600" height="1000" loading="lazy" decoding="async" alt="Wohnzimmer mit Sofa, Holzregal und bodentiefer Tür zum Balkon" />
+            </picture>
+            <figcaption><strong>Loggia</strong> Bodentiefe Schiebetüren zum Außenbereich. <span class="credit mono">Musterbild · Foto: Shixart1985, CC BY 2.0</span></figcaption>
+          </figure>
+        </div>
+        <dl class="specs">
+          <div><dt class="mono">Böden</dt><dd>Eichenparkett geölt, Feinsteinzeug in Bädern</dd></div>
+          <div><dt class="mono">Bäder</dt><dd>Bodengleiche Duschen, wandhängende Keramik</dd></div>
+          <div><dt class="mono">Heizung</dt><dd>Fußbodenheizung, Einzelraumregelung</dd></div>
+          <div><dt class="mono">Lüftung</dt><dd>Kontrollierte Wohnraumlüftung mit Wärmerückgewinnung</dd></div>
+          <div><dt class="mono">Komfort</dt><dd>Aufzug in alle Geschosse, Tiefgarage, Fahrradraum</dd></div>
+          <div><dt class="mono">Hinweis</dt><dd>Fiktive Baubeschreibung zu Demonstrationszwecken</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- KONTAKT -->
+    <section class="section kontakt" id="kontakt" aria-labelledby="kontakt-title">
+      <div class="wrap kontakt__grid">
+        <div class="kontakt__text">
+          <p class="eyebrow mono"><span class="idx">06</span> Kontakt</p>
+          <h2 id="kontakt-title" class="reveal">Exposé anfordern oder Besichtigung vereinbaren.</h2>
+          <p class="section__lead">Ihr Ansprechpartner im (fiktiven) Vertriebsbüro meldet sich innerhalb von zwei Werktagen.</p>
+          <address class="contact-card">
+            <strong>Vertriebsbüro Felsgarten</strong><br />
+            Musterallee 12, 00000 Beispielstadt<br />
+            <a href="tel:+490000000000">+49 0000 000000</a><br />
+            <a href="mailto:vertrieb@felsgarten.example">vertrieb@felsgarten.example</a>
+            <span class="note mono">Alle Kontaktdaten sind Platzhalter.</span>
+          </address>
+        </div>
+        <form class="form" novalidate data-form>
+          <p class="form__note mono" id="form-note" hidden></p>
+          <fieldset class="field field--radio">
+            <legend>Ihr Anliegen</legend>
+            <label class="radio"><input type="radio" name="anliegen" value="Exposé" checked /><span>Exposé</span></label>
+            <label class="radio"><input type="radio" name="anliegen" value="Besichtigung" /><span>Besichtigung</span></label>
+            <label class="radio"><input type="radio" name="anliegen" value="Rückruf" /><span>Rückruf</span></label>
+          </fieldset>
+          <div class="form__row">
+            <div class="field">
+              <label for="c-name">Name <span aria-hidden="true">*</span></label>
+              <input id="c-name" name="name" type="text" autocomplete="name" required aria-describedby="c-name-err" />
+              <p class="field__err" id="c-name-err">Bitte geben Sie Ihren Namen an.</p>
+            </div>
+            <div class="field">
+              <label for="c-email">E-Mail <span aria-hidden="true">*</span></label>
+              <input id="c-email" name="email" type="email" autocomplete="email" required aria-describedby="c-email-err" />
+              <p class="field__err" id="c-email-err">Bitte geben Sie eine gültige E-Mail-Adresse an.</p>
+            </div>
+          </div>
+          <div class="form__row">
+            <div class="field">
+              <label for="c-phone">Telefon <span class="opt">(optional)</span></label>
+              <input id="c-phone" name="telefon" type="tel" autocomplete="tel" />
+            </div>
+            <div class="field">
+              <label for="c-apt">Wohnung <span class="opt">(optional)</span></label>
+              <select id="c-apt" name="wohnung" data-apt-select><option value="">Noch keine bestimmte</option></select>
+            </div>
+          </div>
+          <div class="field">
+            <label for="c-msg">Nachricht <span class="opt">(optional)</span></label>
+            <textarea id="c-msg" name="nachricht" rows="4"></textarea>
+          </div>
+          <div class="check">
+            <input id="c-privacy" name="datenschutz" type="checkbox" required aria-describedby="c-privacy-err" />
+            <label for="c-privacy">Ich habe die <a href="/residenz-felsgarten/datenschutz.html">Datenschutzhinweise</a> gelesen. <span aria-hidden="true">*</span></label>
+            <p class="field__err" id="c-privacy-err">Bitte bestätigen Sie die Datenschutzhinweise.</p>
+          </div>
+          <div class="form__foot">
+            <button type="submit" class="btn">Anfrage senden</button>
+            <p class="form__req mono"><span aria-hidden="true">*</span> Pflichtfeld</p>
+          </div>
+          <p class="form__status mono" role="status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer__inner">
+      <div class="footer__brand">
+        <p class="footer__logo">Residenz <em>Felsgarten</em></p>
+        <p>Ein fiktives Neubauprojekt. Demonstrations-Website für die Vermarktung von Wohnimmobilien.</p>
+      </div>
+      <nav class="footer__nav" aria-label="Fußzeile">
+        <a href="#gebaeude" data-scroll>Gebäude</a>
+        <a href="#wohnungen" data-scroll>Wohnungen</a>
+        <a href="#lage" data-scroll>Lage</a>
+        <a href="#kontakt" data-scroll>Kontakt</a>
+      </nav>
+      <button class="footer__totop link-underline mono" type="button">Nach oben ↑</button>
+    </div>
+    <div class="wrap footer__bottom mono">
+      <span>© 2026 Residenz Felsgarten (fiktiv)</span>
+      <span class="footer__legal"><a href="/residenz-felsgarten/bildrechte.html">Bildrechte</a><a href="/residenz-felsgarten/impressum.html">Impressum</a><a href="/residenz-felsgarten/datenschutz.html">Datenschutz</a></span>
+    </div>
+  </footer>
+</body>
+</html>
