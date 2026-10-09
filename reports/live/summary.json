@@ -1,0 +1,134 @@
+{
+  "url": "https://alper3019-ux.github.io/residenz-felsgarten/",
+  "date": "2026-10-09T11:24:27.495Z",
+  "lighthouse": {
+    "mobile": {
+      "runs": 3,
+      "scoresMedian": {
+        "performance": 69,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100,
+        "agentic-browsing": 100
+      },
+      "performancePerRun": [
+        79,
+        68,
+        69
+      ],
+      "metricsMedian": {
+        "fcp": 1980,
+        "lcp": 2463.5,
+        "tbt": 823.5,
+        "cls": 0.009,
+        "si": 3998.755,
+        "bytes": 254893
+      }
+    },
+    "desktop": {
+      "runs": 3,
+      "scoresMedian": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100,
+        "agentic-browsing": 100
+      },
+      "performancePerRun": [
+        99,
+        100,
+        100
+      ],
+      "metricsMedian": {
+        "fcp": 470,
+        "lcp": 551.5,
+        "tbt": 16,
+        "cls": 0.012,
+        "si": 1071.841,
+        "bytes": 276066
+      }
+    }
+  },
+  "axe": {
+    "desktop": {
+      "violations": 0,
+      "nodes": 0,
+      "list": []
+    },
+    "mobile": {
+      "violations": 0,
+      "nodes": 0,
+      "list": []
+    }
+  },
+  "transfer": {
+    "totalBytes": 276077,
+    "requests": 9,
+    "thirdPartyHosts": [],
+    "list": [
+      {
+        "url": "https://alper3019-ux.github.io/residenz-felsgarten/",
+        "type": "document",
+        "status": 200,
+        "transfer": 7799,
+        "encoding": "gzip"
+      },
+      {
+        "url": "https://alper3019-ux.github.io/residenz-felsgarten/poster/hero-1600.avif",
+        "type": "image",
+        "status": 200,
+        "transfer": 49473,
+        "encoding": ""
+      },
+      {
+        "url": "https://alper3019-ux.github.io/residenz-felsgarten/assets/main-DTgINj3F.css",
+        "type": "stylesheet",
+        "status": 200,
+        "transfer": 8177,
+        "encoding": "gzip"
+      },
+      {
+        "url": "https://alper3019-ux.github.io/residenz-felsgarten/assets/main-D9Q5cJPt.js",
+        "type": "script",
+        "status": 200,
+        "transfer": 57684,
+        "encoding": "gzip"
+      },
+      {
+        "url": "https://alper3019-ux.github.io/residenz-felsgarten/assets/fraunces-latin-wght-normal-ukD16Tqj.woff2",
+        "type": "font",
+        "status": 200,
+        "transfer": 36802,
+        "encoding": ""
+      },
+      {
+        "url": "https://alper3019-ux.github.io/residenz-felsgarten/assets/inter-latin-wght-normal-Dx4kXJAl.woff2",
+        "type": "font",
+        "status": 200,
+        "transfer": 48414,
+        "encoding": ""
+      },
+      {
+        "url": "https://alper3019-ux.github.io/residenz-felsgarten/assets/fraunces-latin-wght-italic-Py8at3oI.woff2",
+        "type": "font",
+        "status": 200,
+        "transfer": 45814,
+        "encoding": ""
+      },
+      {
+        "url": "https://alper3019-ux.github.io/residenz-felsgarten/assets/jetbrains-mono-latin-400-normal-V6pRDFza.woff2",
+        "type": "font",
+        "status": 200,
+        "transfer": 21532,
+        "encoding": ""
+      },
+      {
+        "url": "https://alper3019-ux.github.io/residenz-felsgarten/favicon.svg",
+        "type": "other",
+        "status": 200,
+        "transfer": 382,
+        "encoding": "gzip"
+      }
+    ]
+  }
+}

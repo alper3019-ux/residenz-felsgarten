@@ -67,7 +67,12 @@ export function setupLage({ reduced }) {
   if (reduced) return;
   gsap.set(paths, { strokeDasharray: 1, strokeDashoffset: 1 });
   gsap.set(pois.children, { opacity: 0, scale: 0.6, transformOrigin: 'center' });
-  gsap.timeline({ scrollTrigger: { trigger: svg, start: 'top 75%', once: true } })
-    .to(paths, { strokeDashoffset: 0, duration: 1.4, ease: 'power2.inOut', stagger: 0.12 })
-    .to(pois.children, { opacity: 1, scale: 1, duration: 0.5, ease: 'back.out(2)', stagger: 0.1 }, 0.5);
+  const io = new IntersectionObserver(([en]) => {
+    if (!en.isIntersecting) return;
+    io.disconnect();
+    gsap.timeline()
+      .to(paths, { strokeDashoffset: 0, duration: 1.4, ease: 'power2.inOut', stagger: 0.12 })
+      .to(pois.children, { opacity: 1, scale: 1, duration: 0.5, ease: 'back.out(2)', stagger: 0.1 }, 0.5);
+  }, { rootMargin: '0px 0px -25% 0px' });
+  io.observe(svg);
 }

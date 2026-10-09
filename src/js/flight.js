@@ -46,9 +46,9 @@ export function setupFlight({ reduced, onFloor }) {
     b.addEventListener('click', () => { building?.select(f); onFloor(f); });
   });
 
-  const live = !reduced && hasWebGL();
-  section.classList.toggle('is-static', !live);
-  if (!live) return { select() {}, activate() {} };
+  // Bewegung reduzieren: sofort statisch. Die WebGL-Prüfung (erzeugt einen Kontext, teuer)
+  // läuft erst in activate(), also nicht während des ersten Seitenaufbaus.
+  if (reduced) { section.classList.add('is-static'); return { select() {}, activate() {} }; }
 
   // Pin und 3D werden erst aktiviert, wenn die Seite benutzt wird (activate) – das hält
   // den ersten Seitenaufbau frei von Layout-Arbeit, die niemand sieht.
@@ -56,6 +56,7 @@ export function setupFlight({ reduced, onFloor }) {
   function activate() {
     if (active) return;
     active = true;
+    if (!hasWebGL()) { section.classList.add('is-static'); return; }
 
   // Pin + Fortschritt
   let progress = 0;

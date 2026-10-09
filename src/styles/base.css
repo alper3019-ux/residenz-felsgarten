@@ -105,3 +105,6 @@ button, input, select, textarea { font: inherit; color: inherit; }
 @media (max-width: 520px) {
   .nav__cta { display: none; }
 }
+/* Einblenden beim Scrollen (Klasse setzt nur JavaScript, siehe animations.js) */
+.reveal { transition: opacity .9s var(--ease), transform .9s var(--ease); }
+.reveal.is-pending { opacity: 0; transform: translateY(28px); }
