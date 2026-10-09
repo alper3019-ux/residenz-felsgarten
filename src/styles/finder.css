@@ -1,0 +1,95 @@
+/* ---------- Wohnungsfinder ---------- */
+.filters { display: grid; grid-template-columns: auto repeat(4, minmax(0, 1fr)) auto; gap: 1rem; align-items: end; padding: 1.1rem 1.25rem; border-radius: var(--radius); background: var(--card); border: 1px solid var(--line); }
+.filters__group { display: grid; gap: .4rem; border: 0; padding: 0; margin: 0; min-width: 0; }
+.filters__group > label, .filters__group legend { color: var(--muted); font-size: .68rem; padding: 0; }
+.filters select { min-height: 44px; padding: .5rem 2rem .5rem .75rem; border-radius: 8px; border: 1px solid rgba(28,36,32,.4); background: #fff url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8'%3E%3Cpath d='M1 1l5 5 5-5' fill='none' stroke='%231c2420' stroke-width='1.6'/%3E%3C/svg%3E") no-repeat right .75rem center; appearance: none; width: 100%; }
+.chips { display: flex; gap: 4px; }
+.chip { position: relative; }
+.chip input { position: absolute; inset: 0; opacity: 0; cursor: pointer; margin: 0; }
+.chip span { display: grid; place-items: center; width: 44px; height: 44px; border-radius: 8px; border: 1px solid rgba(28,36,32,.4); font-weight: 500; }
+.chip input:checked + span { background: var(--forest); border-color: var(--forest); color: #fff; }
+.chip input:focus-visible + span, .switch input:focus-visible + span::before { outline: 2px solid var(--forest); outline-offset: 2px; }
+.filters__toggle { display: flex; align-items: center; gap: 1rem; min-height: 44px; }
+.switch { display: inline-flex; align-items: center; gap: .55rem; cursor: pointer; position: relative; font-size: .9rem; white-space: nowrap; }
+.switch input { position: absolute; opacity: 0; width: 40px; height: 24px; margin: 0; cursor: pointer; }
+.switch span::before { content: ''; display: inline-block; vertical-align: middle; width: 40px; height: 24px; border-radius: 99px; background: rgba(28,36,32,.25); margin-right: .55rem; transition: background .25s; box-shadow: inset 0 0 0 2px transparent; }
+.switch span { position: relative; }
+.switch span::after { content: ''; position: absolute; left: 3px; top: 50%; width: 18px; height: 18px; margin-top: -9px; border-radius: 50%; background: #fff; transition: transform .25s var(--ease); }
+.switch input:checked + span::before { background: var(--forest); }
+.switch input:checked + span::after { transform: translateX(16px); }
+.finder__count { margin: 1.5rem 0 1rem; color: var(--muted); }
+.finder__body { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: clamp(1rem, 2.5vw, 2.5rem); align-items: start; }
+.apt-list { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: 1fr 1fr; gap: .6rem; max-height: min(78vh, 760px); overflow: auto; padding-right: .35rem; overscroll-behavior: contain; scrollbar-width: thin; }
+.apt-card { width: 100%; display: grid; grid-template-columns: 1fr auto; gap: .2rem .5rem; text-align: left; padding: .9rem 1rem; border-radius: 10px; border: 1px solid var(--line); background: var(--card); cursor: pointer; transition: border-color .25s, box-shadow .25s, transform .25s var(--ease); }
+.apt-card:hover { border-color: rgba(28,36,32,.45); transform: translateY(-1px); }
+.apt-card.is-selected { border-color: var(--forest); box-shadow: inset 0 0 0 1px var(--forest); background: #fff; }
+.apt-card__id { color: var(--muted); font-size: .68rem; }
+.apt-card__main { grid-column: 1 / -1; font-family: var(--serif); font-size: 1.2rem; line-height: 1.2; }
+.apt-card__meta { grid-column: 1 / -1; color: var(--muted); font-size: .82rem; }
+.apt-card__price { grid-column: 1 / -1; margin-top: .3rem; font-size: .78rem; letter-spacing: .02em; }
+.status { display: inline-flex; align-items: center; gap: .35rem; font-family: var(--mono); font-size: .64rem; text-transform: uppercase; letter-spacing: .06em; padding: .2rem .5rem; border-radius: 99px; height: fit-content; }
+.status::before { content: ''; width: 6px; height: 6px; border-radius: 50%; background: currentColor; }
+.status--ok { color: var(--ok); background: #e3eee5; }
+.status--res { color: var(--res); background: #f4e9d4; }
+.status--sold { color: #555a57; background: #e6e3de; }
+.apt-empty { grid-column: 1 / -1; padding: 2rem; text-align: center; border: 1px dashed var(--line); border-radius: 10px; display: grid; gap: 1rem; justify-items: center; }
+.apt-detail { position: sticky; top: 5.5rem; padding: clamp(1.1rem, 2.5vw, 2rem); border-radius: calc(var(--radius) * 1.4); background: #fff; border: 1px solid var(--line); display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr); gap: 1.25rem 2rem; view-transition-name: plan; }
+.apt-detail > h3, .apt-detail > p { grid-column: 1 / -1; }
+.apt-detail__head { grid-column: 1 / -1; display: flex; flex-wrap: wrap; align-items: center; gap: .5rem 1rem; }
+.apt-detail__kicker { width: 100%; color: var(--gold-ink); }
+.apt-detail__head h3 { font-size: clamp(1.8rem, 1.3rem + 1.6vw, 2.6rem); }
+.apt-detail__plan { min-width: 0; }
+.fp { width: 100%; height: auto; }
+.fp-room { fill: #f7f3ec; stroke: var(--ink); stroke-width: 2.5; }
+.fp-room--living { fill: #efe6d6; }
+.fp-room--wet { fill: #e5ecee; }
+.fp-outer { fill: none; stroke: var(--ink); stroke-width: 6; }
+.fp-label { font-family: var(--sans); font-size: 12px; font-weight: 600; text-anchor: middle; fill: var(--ink); }
+.fp-label--s { font-size: 10px; }
+.fp-area { font-family: var(--mono); font-size: 10px; text-anchor: middle; fill: #4c5751; }
+.fp-out { fill: url(#fp-hatch); stroke: var(--ink); stroke-width: 1.5; stroke-dasharray: 5 4; }
+.fp-hatch { stroke: #c9a46a; stroke-width: 2; }
+.fp-label--out { fill: #5b4216; font-size: 11px; paint-order: stroke; stroke: #fff; stroke-width: 4px; }
+.fp-win line { stroke: #6c8f9b; stroke-width: 1.6; }
+.fp-win .fp-win__gap { stroke: #fff; stroke-width: 7; }
+.fp-door { fill: none; stroke: var(--ink); stroke-width: 1.2; }
+.fp-north path { fill: var(--ink); }
+.fp-north text { font-family: var(--mono); font-size: 10px; text-anchor: middle; fill: var(--ink); }
+.fp-note { font-family: var(--mono); font-size: 10px; fill: #4c5751; }
+.apt-detail__side { display: grid; gap: 1.25rem; align-content: start; }
+.facts { display: grid; grid-template-columns: 1fr 1fr; gap: 0 1rem; border-top: 1px solid var(--ink); }
+.facts > div { padding: .65rem 0; border-bottom: 1px solid var(--line); }
+.facts dt { color: var(--muted); font-size: .64rem; }
+.facts dd { font-family: var(--serif); font-size: 1.15rem; }
+.apt-detail__sec .sec { width: 100%; max-width: 220px; }
+.apt-detail__sec figcaption { color: var(--muted); margin-top: .5rem; font-size: .64rem; text-transform: none; letter-spacing: .02em; }
+.sec-floor { fill: #ebe4d7; }
+.sec-floor.is-on { fill: #d9c7a5; }
+.sec-unit { fill: #fbf8f2; }
+.sec-unit.is-me { fill: var(--forest); }
+.apt-detail__cta { display: flex; flex-wrap: wrap; gap: .6rem; }
+.apt-detail__cta .note { margin: 0; }
+::view-transition-group(*) { animation-duration: .45s; animation-timing-function: cubic-bezier(0.22, 1, 0.36, 1); }
+::view-transition-old(plan) { animation: .25s ease both vt-out; }
+::view-transition-new(plan) { animation: .4s cubic-bezier(0.22, 1, 0.36, 1) both vt-in; }
+@keyframes vt-out { to { opacity: 0; transform: translateY(-6px); } }
+@keyframes vt-in { from { opacity: 0; transform: translateY(10px); } }
+#wohnungen-title:focus { outline: none; }
+
+@media (max-width: 1180px) {
+  .filters { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .apt-detail { grid-template-columns: 1fr; }
+  .apt-detail__side { grid-template-columns: 1fr auto; }
+  .apt-detail__side .facts, .apt-detail__cta { grid-column: 1 / -1; }
+}
+@media (max-width: 900px) {
+  .finder__body { grid-template-columns: 1fr; }
+  .apt-list { max-height: 26rem; }
+  .apt-detail { position: relative; top: 0; scroll-margin-top: 5rem; }
+}
+@media (max-width: 560px) {
+  .filters { grid-template-columns: 1fr 1fr; }
+  .filters__rooms, .filters__toggle { grid-column: 1 / -1; }
+  .apt-list { grid-template-columns: 1fr; }
+  .apt-detail__side { grid-template-columns: 1fr; }
+}

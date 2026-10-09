@@ -1,0 +1,6 @@
+node_modules
+dist
+# Mess-Rohdaten (groß) nicht versionieren, nur die Zusammenfassungen
+reports/**/lighthouse-*.html
+reports/**/lighthouse-*.json
+reports/**/axe-*.json

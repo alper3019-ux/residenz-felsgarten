@@ -1,0 +1,13 @@
+<!doctype html>
+<html lang="de"><head><meta charset="utf-8" /><title>Poster-Render (nur Entwicklung)</title>
+<style>html,body{margin:0;height:100%;overflow:hidden}canvas{position:absolute;inset:0;width:100%;height:100%}#stage{position:fixed;inset:0;--sky-top:#93abbd;--sky-bot:#e8e3d4;background:linear-gradient(to bottom,var(--sky-top),var(--sky-bot) 62%,#c9ccb4 62.2%,#9aa37f)}</style>
+</head><body><div id="stage"></div>
+<script type="module">
+  window.__posterMode = true;
+  const { createBuilding } = await import('/src/webgl/building.js');
+  const q = new URLSearchParams(location.search);
+  const b = await createBuilding(document.getElementById('stage'), { mobile: q.get('mobile') === '1', shift: { x: Number(q.get('sx') || 0), y: Number(q.get('sy') || 0) } });
+  await new Promise((r) => requestAnimationFrame(() => requestAnimationFrame(r)));
+  b.renderNow(Number(q.get('p') || 0));
+  window.__posterReady = true;
+</script></body></html>
