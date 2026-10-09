@@ -1,0 +1,31 @@
+✓ [normal] 8 Etagen-Buttons
+✓ [normal] 3D-Szene geladen (is-live)
+✓ [normal] Raycaster trifft eine Etage (Tooltip: 3. OG · 5 von 5 frei · klicken)
+✓ [normal] Klick im Modell filtert Finder auf „3. OG“
+✓ [normal] Etagen-Button „Penthouse“ setzt Filter
+✓ [normal] Fokus landet auf der Finder-Überschrift
+✓ [normal] Penthouse: 2 Wohnungen
+✓ [normal] Zimmerfilter: 8 von 36 Wohnungen · 5 verfügbar
+✓ [normal] „nur verfügbare“ filtert
+✓ [normal] Detail zeigt Wohnung 1.03
+✓ [normal] Grundriss-SVG vorhanden
+✓ [normal] Formular mit Wohnung 1.03 vorbelegt
+✓ [normal] Anliegen „Besichtigung“ gewählt
+✓ [normal] Pflichtfelder werden markiert
+✓ [normal] Demo-Hinweis statt Fake-Erfolg
+✓ [normal] Verkehrsmittel umschaltbar
+✓ [reduziert] 8 Etagen-Buttons
+✓ [reduziert] Etagen-Button „Penthouse“ setzt Filter
+✓ [reduziert] Fokus landet auf der Finder-Überschrift
+✓ [reduziert] Penthouse: 2 Wohnungen
+✓ [reduziert] Zimmerfilter: 8 von 36 Wohnungen · 5 verfügbar
+✓ [reduziert] „nur verfügbare“ filtert
+✓ [reduziert] Detail zeigt Wohnung 1.03
+✓ [reduziert] Grundriss-SVG vorhanden
+✓ [reduziert] Formular mit Wohnung 1.03 vorbelegt
+✓ [reduziert] Anliegen „Besichtigung“ gewählt
+✓ [reduziert] Pflichtfelder werden markiert
+✓ [reduziert] Demo-Hinweis statt Fake-Erfolg
+✓ [reduziert] Verkehrsmittel umschaltbar
+✓ [reduziert] statische 3D-Alternative
+✓ keine Konsolenfehler 

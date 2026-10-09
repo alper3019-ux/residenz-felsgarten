@@ -1,11 +1,9 @@
-first-contentful-paint (0.85) 2.0 s
-speed-index (0.79) 4.1 s
-total-blocking-time (0.5) 600 ms
-max-potential-fid (0.01) 760 ms
-mainthread-work-breakdown (0) 4.9 s
-unused-javascript (0) Est savings of 25 KiB
+first-contentful-paint (0.8) 2.1 s
+speed-index (0.87) 3.6 s
+mainthread-work-breakdown (0.5) 3.0 s
+unused-javascript (0) Est savings of 30 KiB
 cache-insight (0) Est savings of 221 KiB
 forced-reflow-insight (0) 
 image-delivery-insight (0) Est savings of 19 KiB
 network-dependency-tree-insight (0) 
-render-blocking-insight (0) Est savings of 330 ms
+render-blocking-insight (0) Est savings of 620 ms

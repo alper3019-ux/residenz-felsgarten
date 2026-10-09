@@ -1,32 +1,34 @@
 {
   "url": "https://alper3019-ux.github.io/residenz-felsgarten/",
-  "date": "2026-10-09T11:24:27.495Z",
+  "date": "2026-10-09T11:30:25.156Z",
   "lighthouse": {
     "mobile": {
-      "runs": 3,
+      "runs": 5,
       "scoresMedian": {
-        "performance": 69,
+        "performance": 94,
         "accessibility": 100,
         "best-practices": 100,
         "seo": 100,
         "agentic-browsing": 100
       },
       "performancePerRun": [
-        79,
-        68,
-        69
+        94,
+        81,
+        83,
+        94,
+        96
       ],
       "metricsMedian": {
-        "fcp": 1980,
-        "lcp": 2463.5,
-        "tbt": 823.5,
-        "cls": 0.009,
-        "si": 3998.755,
-        "bytes": 254893
+        "fcp": 2121.713,
+        "lcp": 2404.213,
+        "tbt": 11,
+        "cls": 0.008,
+        "si": 3966.937,
+        "bytes": 254975
       }
     },
     "desktop": {
-      "runs": 3,
+      "runs": 5,
       "scoresMedian": {
         "performance": 100,
         "accessibility": 100,
@@ -35,17 +37,19 @@
         "agentic-browsing": 100
       },
       "performancePerRun": [
-        99,
+        100,
+        100,
+        100,
         100,
         100
       ],
       "metricsMedian": {
         "fcp": 470,
-        "lcp": 551.5,
-        "tbt": 16,
+        "lcp": 541,
+        "tbt": 0,
         "cls": 0.012,
-        "si": 1071.841,
-        "bytes": 276066
+        "si": 897.63,
+        "bytes": 276199
       }
     }
   },
@@ -62,7 +66,7 @@
     }
   },
   "transfer": {
-    "totalBytes": 276077,
+    "totalBytes": 276203,
     "requests": 9,
     "thirdPartyHosts": [],
     "list": [
@@ -70,63 +74,63 @@
         "url": "https://alper3019-ux.github.io/residenz-felsgarten/",
         "type": "document",
         "status": 200,
-        "transfer": 7799,
+        "transfer": 7815,
+        "encoding": "gzip"
+      },
+      {
+        "url": "https://alper3019-ux.github.io/residenz-felsgarten/assets/main-B5dJNXcI.css",
+        "type": "stylesheet",
+        "status": 200,
+        "transfer": 7991,
         "encoding": "gzip"
       },
       {
         "url": "https://alper3019-ux.github.io/residenz-felsgarten/poster/hero-1600.avif",
         "type": "image",
         "status": 200,
-        "transfer": 49473,
+        "transfer": 49559,
         "encoding": ""
       },
       {
-        "url": "https://alper3019-ux.github.io/residenz-felsgarten/assets/main-DTgINj3F.css",
-        "type": "stylesheet",
-        "status": 200,
-        "transfer": 8177,
-        "encoding": "gzip"
-      },
-      {
-        "url": "https://alper3019-ux.github.io/residenz-felsgarten/assets/main-D9Q5cJPt.js",
+        "url": "https://alper3019-ux.github.io/residenz-felsgarten/assets/main-Cw3hG3dW.js",
         "type": "script",
         "status": 200,
-        "transfer": 57684,
+        "transfer": 57755,
         "encoding": "gzip"
       },
       {
         "url": "https://alper3019-ux.github.io/residenz-felsgarten/assets/fraunces-latin-wght-normal-ukD16Tqj.woff2",
         "type": "font",
         "status": 200,
-        "transfer": 36802,
+        "transfer": 36777,
         "encoding": ""
       },
       {
         "url": "https://alper3019-ux.github.io/residenz-felsgarten/assets/inter-latin-wght-normal-Dx4kXJAl.woff2",
         "type": "font",
         "status": 200,
-        "transfer": 48414,
+        "transfer": 48575,
         "encoding": ""
       },
       {
         "url": "https://alper3019-ux.github.io/residenz-felsgarten/assets/fraunces-latin-wght-italic-Py8at3oI.woff2",
         "type": "font",
         "status": 200,
-        "transfer": 45814,
+        "transfer": 45885,
         "encoding": ""
       },
       {
         "url": "https://alper3019-ux.github.io/residenz-felsgarten/assets/jetbrains-mono-latin-400-normal-V6pRDFza.woff2",
         "type": "font",
         "status": 200,
-        "transfer": 21532,
+        "transfer": 21317,
         "encoding": ""
       },
       {
         "url": "https://alper3019-ux.github.io/residenz-felsgarten/favicon.svg",
         "type": "other",
         "status": 200,
-        "transfer": 382,
+        "transfer": 529,
         "encoding": "gzip"
       }
     ]

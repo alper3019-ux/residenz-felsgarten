@@ -49,7 +49,17 @@ Wohnungsdaten: `src/data/apartments.js` – für ein echtes Projekt durch Daten 
 
 ## Messwerte
 
-MESSWERTE_PLATZHALTER
+Gemessen am 09.10.2026 gegen die **Live-Seite** (GitHub Pages), Lighthouse 13.5 (Standard-Drosselung), Median aus 5 Läufen je Formfaktor, axe-core 4.14 nach Durchscrollen. Rohdaten-Zusammenfassung: [`reports/live/summary.json`](reports/live/summary.json).
+
+| Lighthouse | Performance (Läufe) | Barrierefreiheit | Best Practices | SEO | FCP | LCP | TBT | CLS |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Mobil | **94** (94/81/83/94/96) | 100 | 100 | 100 | 2.12 s | 2.40 s | 11 ms | 0.008 |
+| Desktop | **100** (100/100/100/100/100) | 100 | 100 | 100 | 0.47 s | 0.54 s | 0 ms | 0.012 |
+
+- **axe-core:** 0 Verstöße auf der Startseite (Desktop 1440×900 und Mobil 390×844) sowie auf Impressum, Datenschutz, Bildrechte und 404 ([`reports/live/subpages.txt`](reports/live/subpages.txt)).
+- **Interaktionstest** (`scripts/interaction-test.mjs`, live): 31/31 Prüfungen bestanden, normal und mit „Bewegung reduzieren“, **keine Konsolenfehler** ([`reports/live/interaction-test.txt`](reports/live/interaction-test.txt)).
+- **Erstaufruf:** 270 KB in 9 Requests, keine Drittanbieter-Hosts. Three.js (≈141 KB gzip) wird erst geladen, wenn der Gebäude-Abschnitt näher kommt.
+- **Streuung:** Die Messumgebung ist ein geteilter Container ohne GPU (Software-WebGL) mit schwankender Last (Load Average ≈ 7–10 während der Messung); die mobilen Einzelwerte lagen zwischen 81 und 96.
 
 ## Recherche – genutzte Quellen (alle geöffnet)
 

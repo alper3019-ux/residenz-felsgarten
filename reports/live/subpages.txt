@@ -1,0 +1,4 @@
+impressum.html 200 axe: 0 console errors: 0
+datenschutz.html 200 axe: 0 console errors: 0
+bildrechte.html 200 axe: 0 console errors: 0
+gibtsnicht 404 axe: 0 console errors: 0
